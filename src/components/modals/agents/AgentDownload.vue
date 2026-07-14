@@ -83,7 +83,7 @@
         downloading the installer again.
       </p>
       <q-btn
-        v-if="info.plat === 'windows'"
+        v-if="['windows', 'darwin'].includes(info.plat)"
         type="a"
         :href="info.data.url"
         color="primary"
